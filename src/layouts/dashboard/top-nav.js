@@ -8,7 +8,7 @@ export const TopNav = () => (
   <Box
     component="header"
     sx={{
-      backgroundColor: 'neutral.900',
+      backgroundColor: 'neutral.top_nav',
       color: 'common.white',
       position: 'fixed',
       width: '100%',

@@ -7,7 +7,7 @@ import 'simplebar-react/dist/simplebar.min.css';
 export const App = () => {
   const element = useRoutes(routes);
   const theme = createTheme({
-    colorPreset: 'green',
+    colorPreset: '#c6ff03',
     contrast: 'high'
   });
 

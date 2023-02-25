@@ -14,7 +14,7 @@ export const SideNav = () => {
       variant="permanent"
       PaperProps={{
         sx: {
-          backgroundColor: 'background.default',
+          backgroundColor: '#0e0e0e',
           display: 'flex',
           flexDirection: 'column',
           height: `calc(100% - ${TOP_NAV_HEIGHT}px)`,

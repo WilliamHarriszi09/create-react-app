@@ -98,7 +98,7 @@ export const OverviewKpi = (props) => {
               key={item.label}
               sx={{
                 alignItems: 'center',
-                backgroundColor: '#F3F4F7',
+                backgroundColor: '#2d2d2d',
                 borderRadius: 1,
                 p: 2
               }}

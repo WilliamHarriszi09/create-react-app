@@ -22,6 +22,9 @@ export const neutral = {
   700: '#344054',
   800: '#1D2939',
   900: '#101828',
+  top_nav: '#070708',
+  side_bar: '#0e0e0e',
+  logo: '#c6ff03'
 };
 
 export const blue = withAlphas({
@@ -38,9 +41,16 @@ export const green = withAlphas({
   contrastText: '#FFFFFF'
 });
 
+export const yellow = withAlphas({
+  light: '#F4EBFF',
+  main: '#c6ff03',
+  dark: '#6941C6',
+  contrastText: '#FFFFFF'
+});
+
 export const indigo = withAlphas({
   light: '#EBEEFE',
-  main: '#635dff',
+  main: '#c6ff03',
   dark: '#4338CA',
   contrastText: '#FFFFFF'
 });

@@ -32,6 +32,7 @@ export const Logo = (props) => {
         opacity="0.5"
       />
     </svg>
+    
   );
 };
 

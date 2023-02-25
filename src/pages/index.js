@@ -22,12 +22,12 @@ const Page = () => (
   <>
     <Helmet>
       <title>
-        Overview | Carpatin Free
+        BITONITE
       </title>
     </Helmet>
     <Box
       sx={{
-        flexGrow: 1,
+        flexGrow: 2,
         py: 8
       }}
     >
@@ -35,7 +35,7 @@ const Page = () => (
         <Stack spacing={3}>
           <div>
             <Typography variant="h4">
-              Reports
+              BTC Stats
             </Typography>
           </div>
           <div>
@@ -45,71 +45,42 @@ const Page = () => (
             >
               <Grid
                 xs={12}
-                md={4}
+                md={3}
               >
                 <OverviewSummary
-                  icon={
-                    <Avatar
-                      sx={{
-                        backgroundColor: 'primary.main',
-                        color: 'primary.contrastText',
-                        height: 56,
-                        width: 56
-                      }}
-                    >
-                      <SvgIcon>
-                        <ShoppingBagIcon />
-                      </SvgIcon>
-                    </Avatar>
-                  }
+                  icon={""}
                   label='Orders'
                   value='5610'
                 />
               </Grid>
               <Grid
                 xs={12}
-                md={4}
+                md={3}
               >
                 <OverviewSummary
-                  icon={
-                    <Avatar
-                      sx={{
-                        backgroundColor: 'primary.main',
-                        color: 'primary.contrastText',
-                        height: 56,
-                        width: 56
-                      }}
-                    >
-                      <SvgIcon>
-                        <ShoppingCartIcon />
-                      </SvgIcon>
-                    </Avatar>
-                  }
+                  icon={""}
                   label='Products'
                   value='23'
                 />
               </Grid>
               <Grid
                 xs={12}
-                md={4}
+                md={3}
               >
                 <OverviewSummary
-                  icon={
-                    <Avatar
-                      sx={{
-                        backgroundColor: 'primary.main',
-                        color: 'primary.contrastText',
-                        height: 56,
-                        width: 56
-                      }}
-                    >
-                      <SvgIcon>
-                        <CurrencyDollarIcon />
-                      </SvgIcon>
-                    </Avatar>
-                  }
+                  icon={""}
                   label='Transactions'
                   value='1942'
+                />
+              </Grid>
+              <Grid
+                xs={12}
+                md={3}
+              >
+                <OverviewSummary
+                  icon={""}
+                  label='Orders'
+                  value='5610'
                 />
               </Grid>
               <Grid xs={12}>
