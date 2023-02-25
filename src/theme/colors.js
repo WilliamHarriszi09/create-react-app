@@ -21,7 +21,7 @@ export const neutral = {
   600: '#475467',
   700: '#344054',
   800: '#1D2939',
-  900: '#101828'
+  900: '#101828',
 };
 
 export const blue = withAlphas({
