@@ -7,6 +7,7 @@ import {
   Avatar,
   Box,
   Container,
+  Icon,
   Stack,
   SvgIcon,
   Typography,
@@ -15,6 +16,7 @@ import {
 import { OverviewKpi } from 'src/sections/overview/overview-kpi';
 import { OverviewLatestCustomers } from 'src/sections/overview/overview-latest-customers';
 import { OverviewSummary } from 'src/sections/overview/overview-summary';
+import GreenField from '../components/green-field';
 
 const now = new Date();
 
@@ -47,127 +49,145 @@ const Page = () => (
                 xs={12}
                 md={3}
               >
-                <OverviewSummary
+                {/* <OverviewSummary
                   icon={""}
                   label='Orders'
-                  value='5610'
+                  value='$23,996.20'
+                /> */}
+                <GreenField 
+                  title="PRODUCT1" 
+                  description={null} 
+                  current_cost="$30,987,456,006"
+                  plus_cost="+$102,90 (5.13%) today"
                 />
               </Grid>
               <Grid
                 xs={12}
                 md={3}
               >
-                <OverviewSummary
-                  icon={""}
-                  label='Products'
-                  value='23'
+                <GreenField 
+                  title="PRODUCT1" 
+                  description="" 
+                  current_cost="$30,987,456,006"
+                  plus_cost={null}
+                  sub_cost={null}
                 />
               </Grid>
               <Grid
                 xs={12}
                 md={3}
               >
-                <OverviewSummary
-                  icon={""}
-                  label='Transactions'
-                  value='1942'
+                <GreenField 
+                  title="PRODUCT1" 
+                  description="A measure of how much of a cryptocurrency was traded in the last 24 hours." 
+                  current_cost="$30,987,456,006"
+                  plus_cost={null}
+                  sub_cost="1,292,892 BTC"
                 />
               </Grid>
               <Grid
                 xs={12}
                 md={3}
               >
-                <OverviewSummary
-                  icon={""}
-                  label='Orders'
-                  value='5610'
+                <GreenField 
+                  title="PRODUCT1" 
+                  description={null} 
+                  current_cost="$30,987,456,006"
+                  plus_cost="+$102,90 (5.13%) today"
+                  isActive={true}
                 />
               </Grid>
-              <Grid xs={12}>
-                <OverviewKpi
-                  chartSeries={[
-                    {
-                      data: [0, 20, 40, 30, 30, 44, 90],
-                      name: 'Revenue'
-                    }
-                  ]}
-                  stats={[
-                    {
-                      label: 'Revenue',
-                      value: '$4,800.00'
-                    },
-                    {
-                      label: 'NET',
-                      value: '$4,900,24'
-                    },
-                    {
-                      label: 'Pending orders',
-                      value: '$1,600.50'
-                    },
-                    {
-                      label: 'Due',
-                      value: '$6,900.10'
-                    },
-                    {
-                      label: 'Overdue',
-                      value: '$6,500.80'
-                    }
-                  ]}
-                />
-              </Grid>
-              <Grid xs={12}>
-                <OverviewLatestCustomers
-                  customers={[
-                    {
-                      id: 'a105ac46530704806ca58ede',
-                      amountSpent: 684.45,
-                      avatar: '/assets/avatars/avatar-fabiano-jorioz.jpg',
-                      createdAt: subDays(subHours(subMinutes(now, 7), 3), 2).getTime(),
-                      isOnboarded: true,
-                      name: 'Fabiano Jorioz',
-                      orders: 2
-                    },
-                    {
-                      id: '126ed71fc9cbfabc601c56c5',
-                      amountSpent: 0,
-                      avatar: '/assets/avatars/avatar-meggie-heinonen.jpg',
-                      createdAt: subDays(subHours(subMinutes(now, 7), 3), 2).getTime(),
-                      isOnboarded: false,
-                      name: 'Meggie Heinonen',
-                      orders: 0
-                    },
-                    {
-                      id: 'aafaeb0545357922aff32a7b',
-                      amountSpent: 32.25,
-                      avatar: '/assets/avatars/avatar-sean-picott.jpg',
-                      createdAt: subDays(subHours(subMinutes(now, 11), 2), 3).getTime(),
-                      isOnboarded: true,
-                      name: 'Sean Picott',
-                      orders: 1
-                    },
-                    {
-                      id: '16b526d9e0fefe53f7eba66b',
-                      amountSpent: 0,
-                      avatar: '/assets/avatars/avatar-bell-covely.jpg',
-                      createdAt: subDays(subHours(subMinutes(now, 18), 9), 5).getTime(),
-                      isOnboarded: true,
-                      name: 'Bell Covely',
-                      orders: 0
-                    },
-                    {
-                      id: 'fe035356923629912236d9a2',
-                      amountSpent: 125.70,
-                      avatar: '/assets/avatars/avatar-giraud-lamlin.jpg',
-                      createdAt: subDays(subHours(subMinutes(now, 19), 18), 7).getTime(),
-                      isOnboarded: false,
-                      name: 'Giraud Lamlin',
-                      orders: 1
-                    }
-                  ]}
-                />
-              </Grid>
+
             </Grid>
           </div>
+          <div>
+            <div>
+              <Typography variant="h4">
+                BTC Chart
+              </Typography>
+            </div>
+            <div>
+              <div style={{height: '100%', display: 'grid'}}>
+                  <span class="MuiTypography-root MuiTypography-overline css-10pvg4-MuiTypography-root" >{"Live Price"}</span>
+                  <div style={{bottom: '0px', display: 'grid', justifyContent: 'flex-start'}}>
+                      <h6 class="MuiTypography-root MuiTypography-h6 css-1m7jvl4-MuiTypography-root" style={{margin: 'auto', marginLeft: '0px', marginBottom: '0px'}}>{"$23,996.20"}</h6>
+                      <span class="MuiTypography-root MuiTypography-overline css-10pvg4-MuiTypography-root" 
+                          style={{fontSize: '10px', margin: 'auto', marginLeft: '0px', marginBottom: '0px', padding: '1px 10px', background: '#08705570', color:'#087055', borderRadius: '20px'}}>{"+$102,90 (5.13%) today"}</span>
+                  </div>
+              </div>
+            </div>
+            <div style={{paddingTop: '24px'}}>
+              <Grid
+                container
+                spacing={3}
+              >
+                <Grid md={8}>
+                  <OverviewKpi
+                    chartSeries={[
+                      {
+                        data: [0, 20, 40, 30, 30, 44, 90],
+                        name: 'Revenue'
+                      }
+                    ]}
+                    stats={[
+                      {
+                        label: '24hr'
+                      },{
+                        label: '7d'
+                      },{
+                        label: '30d'
+                      },{
+                        label: '3m'
+                      },{
+                        label: '1y'
+                      }
+                    ]}
+                  />
+                </Grid>
+              </Grid>
+            </div>
+          </div>
+          <div>
+            <Typography variant="h4">
+              BTC to USD Converter
+            </Typography>
+          </div>
+          <Grid
+            container
+          >
+            <Grid
+              xs={12}
+              md={4}
+            >
+              <OverviewSummary
+                icon={""}
+                label='BTC'
+                value='10'
+              />
+            </Grid>
+            <Grid
+              xs={12}
+              md={1}
+              sx={{
+                display: 'flex',
+                padding: '10px'
+              }}
+            >
+              <div style={{padding: '0px', margin: 'auto', borderRadius: '50%', background: "#c6ff03", display: 'flex', height: '40px', width: '40px'}}>
+                <span style={{margin: 'auto', color: 'black'}}>=</span>
+              </div> 
+            </Grid>
+            <Grid
+              xs={12}
+              md={4}
+            >
+              <OverviewSummary
+                icon={""}
+                label='USD'
+                value='$240,070.26'
+              />
+            </Grid>              
+          </Grid>
         </Stack>
       </Container>
     </Box>

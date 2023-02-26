@@ -19,7 +19,7 @@ export const createPalette = (config) => {
       default: contrast === 'high' ? '#0f0f11' : '#18181b',
       paper: '#18181b'
     },
-    divider: '#F2F4F7',
+    divider: '#18181b',
     error,
     info,
     mode: 'dark',

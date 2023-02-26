@@ -28,7 +28,7 @@ export const SideNav = () => {
       <List sx={{ width: '100%' }}>
         {items.map((item) => {
           const active = matchPath({ path: item.href, end: true }, location.pathname);
-
+          
           return (
             <ListItem
               disablePadding
